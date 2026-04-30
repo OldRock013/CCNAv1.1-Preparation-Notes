@@ -1,3 +1,3 @@
-# CCNA Preparation Labs
-Lab 1:
+# CCNA Preparation Notes
+
 
