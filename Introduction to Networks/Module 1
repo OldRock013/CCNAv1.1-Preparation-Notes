@@ -1,1 +1,71 @@
+Networking today
+1. It Affect our lives
+	a. Importance: it is vital as air, water, food and shelter. It connects people, devices, business or organization globally.
+	b. Global Connectivity: It enhanced the social interaction, education, entertainment, collaboration and all at the palm of your hand. (ex. Viber, Netflix,etc)
+
+2. Network Components
+	a. Host Roles - are any device that communicates over the network.
+		Types of Hosts:
+      2.a Servers - provides services like Email server: Handles email communication.
+      2.b Clients - resquests services from servers like
+  b. Peer-to-peer Networks - Devices that can act as server and a client. It is simple and effective for a small networks.
+  c. End devices - These devices where messages originate or terminate (Ex. CPs, IoT devices, Laptop, etc.)
+  d. Intermediary Devices - responsible for forwardting and routing the data, maintaining error and status notification. (Example: Switches, Routers, Firewalls)
+  e. Network Media:
+      2.a Copper Wires - transmit data thru electrical pulses
+      2.b Fiber Optic - Uses light pulses for data transmission.
+      2.c Wireless - use electromagnetic waves
+
+3. Network Representations and Topologies
+  a. Network Diagrams - Visual Representaiton od devices and connections.
+      3.a NIC (Network Interface Card) - Device hardware for connectivity
+      3.b Physical Port - Device hardware interface
+      3.c Interface - Term used interchangeably with "Port"
+  b. Topology Diagrams
+      3.a Physical Topology - Physical placement of Devices
+      3.b Logical Topology - Data flow addressing and configurations.
+
+4. Common types of networks
+  a. Network by size
+      4.a Small home networks - Few interconnected devices
+      4.b SOHO - Small Office/Home Office
+      4.c LANs and WANs - Hundreds or thousands of devices accross locations
+      4.d World Wide Networks - Millions of interconnected devices globally
+  b. LANs and WANs
+      4.a LAN (Local Area Network) - Limited to small geographical areas (Offices, schools)
+      4.b WAN (Wide Area Network) - Connect multiple LANs over large distances and typically managed by services providers
+  c. The Internet - Global Interconnection od LANs and WANs (Maintained by orgs: IETF, ICANN, IAB)
+  D. Intranet and Extranet: 
+      4.a Intranets - Private networks for internal organizational use
+      4.b Extranet - Secure network access for external users or organizations.
+
+5. Internet Connecttions 
+  a. Home and Small Office
+      5.a Cable: High Speed, always-on connection via TV service providers.
+      5.b DSL: High-speed over phone lines.
+      5.c Cellular: Internet via mobile networks
+      5.d Satellite: Suitable for rural/remotes areas
+      5.e Dial-up: Low-speed, outdated technology
+  b. Business Connections
+      5.a Leased Lines - Dedicated circuits for private connections.
+      5.b Ethernet WAN - Extends LAN capabilities over wide areas
+      5.c DSL Variants - Includes business-class DSL
+      5.d Satellite - Alternative for locations without wired access.
+  c. Converged Networks - Unified communications infrastructure for Data, Voice and video services.
+
+6. Reliable Networks 
+  a. Fault Tolerence - Redundancy using multiple pathways ensures reliability / can do packet switching that enable alternate routing during failures
+  b. Scalabiliy - Ability to grow the network without affective performance
+  c. Quality of Services (QoS) - Prioritizes critical traffice like voice and video
+  d. Security - Infrastructure Security for protecting Devices and Access | Information Security - Ensures CIA triad.
+
+7. Network Trends
+  a. BYOD (Bring Your Own Device) - Users bring personnal devices 
+  b. Online Collaboration - tools like cisco webex
+  c. Video communication - realtime video conference
+  d. Cloud Computing - remote access to data and applications via cloud services.
+
+
+
+
 
