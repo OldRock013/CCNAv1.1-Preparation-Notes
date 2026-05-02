@@ -2,7 +2,7 @@
 
 Introduction to Networks:
 
-[Module 1](URL "https://github.com/OldRock013/CCNA/blob/main/Introduction%20to%20Networks/Module%201.md")
+[Module 1](URL "Introduction to Networks/Module 1.md")
 
 [Module 2](URL "https://github.com/OldRock013/CCNA/blob/main/Introduction%20to%20Networks/Module%202.md")
 
