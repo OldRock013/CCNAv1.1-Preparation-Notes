@@ -70,7 +70,7 @@ d. Network, Host, Broadcast Addresses
   Optimizes address usage by dividing subnets further based on needs.
   Example: Use /30 for point-to-point links and /27 for LANs.
 
-  For Full SUbnetting tutorial: https://youtube.com/playlist?list=PLartSvhZE-WCJzk8yU2_KGJb8J97xVjPP&si=ux9b75_yFBq_YBqJ
+  For Full Tutorial of [Subnetting](URL"https://youtube.com/playlist?list=PLartSvhZE-WCJzk8yU2_KGJb8J97xVjPP&si=GPd6ZIaQ31U-Gxfo")
   
     
       
