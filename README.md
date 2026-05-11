@@ -35,3 +35,39 @@
 [Module 16](https://github.com/OldRock013/CCNA/blob/main/Introduction%20to%20Networks/Module%2016.md): Network Security Fundamentals
 
 [Module 17](https://github.com/OldRock013/CCNA/blob/main/Introduction%20to%20Networks/Module%2017.md): Build a Small Network
+
+### Switching, Routing, and Wirelesss Essentials:
+
+[Module 1](): Basic Device Configuration
+
+[Module 2](): Switching Concepts
+
+[Module 3](): VLANs
+
+[Module 4](): Inter-VLAN Routing
+
+[Module 5](): Spanning Tree Protocol (STP) Concepts
+
+[Module 6](): EtherChannel
+
+[Module 7](): DHCPv4
+
+[Module 8](): SLAAC and DHCPv6
+
+[Module 9](): FHRP Concepts
+
+[Module 10](): LAN Security Concepts
+
+[Module 11](): Switch Security Configuration
+
+[Module 12](): WLAN Concepts
+
+[Module 13](): WLAN Configuration
+
+[Module 14](): Routing Concepts
+
+[Module 15](): IP Static Routing
+
+[Module 16](): Troubleshoot Static and Default Routes
+
+[Module 17](): RSTP (Supplemental v1.1)
