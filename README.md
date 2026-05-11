@@ -71,3 +71,33 @@
 [Module 16](https://github.com/OldRock013/CCNAv1.1-Preparation-Notes/blob/main/Switching%2C%20Routing%20and%20Wireless%20Essentials/Module%2016.md): Troubleshoot Static and Default Routes
 
 [Module 17](https://github.com/OldRock013/CCNAv1.1-Preparation-Notes/blob/main/Switching%2C%20Routing%20and%20Wireless%20Essentials/Module%2017.md): RSTP (Supplemental v1.1)
+
+### Enterprise Network Security and Automation
+
+[Module 1](): Single-Area OSPFv2 Concepts
+
+[Module 2](): Single-Area OSPFv2 Configuration
+
+[Module 3](): Network Security Concepts
+
+[Module 4](): ACL Concepts
+
+[Module 5](): ACLs for IPv4 Configuration
+
+[Module 6](): NAT for IPv4
+
+[Module 7](): WAN Concepts
+
+[Module 8](): VPN and IPsec Concepts
+
+[Module 9](): QoS Concepts
+
+[Module 10](): Network Management
+
+[Module 11](): Network Design
+
+[Module 12](): Network Troubleshooting
+
+[Module 13](): Network Virtualization
+
+[Module 14](): Network Automation
