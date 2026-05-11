@@ -21,3 +21,21 @@
        ping
        traceroute
 ### 3. Configure IP Default Static Routes
+    a. Default Route 
+       - Matches all packets using 0.0.0.0/0 for IPv4 and ::/0 for IPv6
+       - Commonly used in edge routers or stub networks.
+    b. Configuration Example:
+       IPv4: ip route 0.0.0.0 0.0.0.0 next-hop-ip
+       IPv6: ipv6 route ::/0 next-hop-ip
+### 4. Floating Static Route
+    a. Backup route with higher administrative distance than the primary route.
+    b. Example:
+       IPv4: ip route 0.0.0.0 0.0.0.0 10.10.10.10.2 5
+       IPv6: ipv6 route ::/0 2001:db8:feed:10:2 5
+### 5. Configure Static Host Routes
+    a. Host Routes
+       - IPv4 host route: 32-bit mask.
+       - IPv6 host route: 128-bit prefix length
+    b. Configuration Example:
+       - IPv4: ip route 209.165.200.238 255.255.255.255 next-hop-ip
+       - IPv6: ipv6 route 2001:db8:acad:2::238/128 next-hop-ip
