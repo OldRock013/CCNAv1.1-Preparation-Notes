@@ -57,19 +57,19 @@ In this LAB includes:
        R1(config-line)#password MySecureVTY
        R1(config-line)#login
    
-8. Exec timeout - used to set an inactivity timer for console or VTY (Telnet/SSH) sessions. If a session remains idle for the specified time, it will automatically disconnect
+7. Exec timeout - used to set an inactivity timer for console or VTY (Telnet/SSH) sessions. If a session remains idle for the specified time, it will automatically disconnect
 
        CLI:
        R1(config)#line console 0
        R1(config-line)#exec-timeout 5 00
    
-10. Logging Synchronous - used to prevent syslog messages from interrupting user input on the console or VTY lines. By default, system messages (like interface status changes) can appear while you're typing a command, making it difficult to read or complete your input.
+8. Logging Synchronous - used to prevent syslog messages from interrupting user input on the console or VTY lines. By default, system messages (like interface status changes) can appear while you're typing a command, making it difficult to read or complete your input.
 
         CLI:
         R1(config)#line console 0
         R1(config-line)#logging synchronous
 
-11. Disabling ip domain lookup - a feature that allows the router to resolve unrecognized commands or hostnames into IP addresses using DNS. 
+9. Disabling ip domain lookup - a feature that allows the router to resolve unrecognized commands or hostnames into IP addresses using DNS. 
 
 - Avoids delays when mistyping commands.
 
@@ -80,15 +80,96 @@ In this LAB includes:
         CLI:
         R1(config)#no ip domain-lookup  
         
-12. IP domain name - used to set a domain name for the device, which is often required for features like SSH, PKI certificates, and DNS resolution
+10. IP domain name - used to set a domain name for the device, which is often required for features like SSH, PKI certificates, and DNS resolution
 
         CLI:
         R1(config)#ip domain-name cisco.com
-14. Username and password
-15. Encrypting all passwords
-16. Set Current Clock Time
-17. Set management IP Address-SW
-18. Prevent Brute-force Attack-Router
-19. Viewing Running & Startup Configs
-20. Saving running into startup configs
-       
+11. Username and password - Configure local usernames and passwords to authenticate users accessing the device via console, Telnet, or SSH.
+
+Example:
+           
+        R1(config)#username admin ?
+        password   Specify the password for the user
+        privilege  Set user privilege level
+        secret     Specify the secret for the user
+        <cr>
+        R1(config)#username admin privilege ?
+        <0-15>  User privilege level
+        R1(config)#username admin privilege 15 ?
+        password  Specify the password for the user
+        secret    Specify the secret for the user
+        
+        CLI:
+        R1(config)#username admin privilege 15 secret S3cur3P@ss
+        **********Applying to Console &VTY lines***************
+        R1(config)#line console 0
+        R1(config-line)#login local
+        R1(config-line)#line vty 0 15 
+        R1(config-line)#login local
+        
+12. Encrypting all passwords - Encrypts passwords using Type 7 encryption (Vigenère cipher).  Prevents passwords from being visible in show running-config. Not highly secure—Type 7 encryption is reversible.
+
+
+        CLI:
+        R1(config)#service password-encryption
+
+14. Set Current Clock Time -To manually set the current clock time on a Cisco IOS device
+
+        CLI:
+        R1#clock set 01:31:00 June 1 2026
+    
+15. Set management IP Address-SW - typically configure an interface that will be used for remote management, such as a VLAN interface or a loopback interface.
+
+        CLI:
+        R1(config)#interface vlan 1
+        R1(config-if)#ip address 192.168.1.1 255.255.255.0
+        R1(config-if)#no shutdown
+        
+16. Prevent Brute-force Attack-Router -Blocks login for 120 seconds if there are 3 failed attempts within 60 seconds. Helps mitigate dictionary attacks and denial-of-service (DoS) attacks.
+
+        Example:
+        R1(config)#login ?
+        block-for   Set quiet-mode active time period
+        on-failure  Set options for failed login attempt
+        on-success  Set options for successful login attempt
+        R1(config)#login block-for ?
+          <1-65535>  Time period in seconds
+        R1(config)#login block-for 120 ?
+        attempts  Set max number of fail attempts
+        R1(config)#login block-for 120 attempts ?
+          <1-65535>  Fail attempts max value
+        R1(config)#login block-for 120 attempts 3
+        R1(config)#login block-for 120 attempts 3 ?
+          within  Watch period for fail attempts
+        R1(config)#login block-for 120 attempts 3 within ?
+          <1-65535>  Time period in seconds
+        ===============================================================  
+        CLI:
+        R1(config)#login block-for 120 attempts 3 within 60
+
+18. Viewing Running & Startup Configs and Saving running into startup configs
+
+    Runing Config:
+
+    - Displays the current settings stored in RAM.
+
+    - Changes made here are not saved unless explicitly copied to startup config
+
+    Startup Config:
+
+    - Stored in NVRAM.
+
+    - If different from the running config, the device will revert to this on reboot
+    
+    Copy run startup:
+
+    - Saves the current settings to NVRAM.
+
+    - Prevents loss of configuration after a power cycle
+
+          CLI:
+          R1# show running-config
+          R1# show startup-config
+          R1# copy running-config startup-config
+      
+          
